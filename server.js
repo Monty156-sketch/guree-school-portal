@@ -554,8 +554,26 @@ app.post('/admin/announcements/delete', (req, res) => {
 // Home Page
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.send(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Guree School Portal</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body style="text-align: center; padding: 30px;">
+      <img src="/images/badge.jpg" alt="School Badge" style="height: 100px; margin-bottom: 20px;" />
+      <h1>🎓 Welcome to Guree Primary School Portal</h1>
+      <p>Building the future, one child at a time.</p>
+
+      <a href="/student-login">Student Login</a> |
+      <a href="/dashboard">Admin Dashboard</a>
+    </body>
+    </html>
+  `);
 });
+
 
 // Register Page
 app.get('/register', (req, res) => {
