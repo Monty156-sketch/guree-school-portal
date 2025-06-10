@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 app.use(express.static('public'));
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 let students = [];  // Temporary in-memory list
 const fs = require('fs');
 const dataPath = path.join(__dirname, 'data', 'students.json');
@@ -552,6 +552,7 @@ app.post('/admin/announcements/delete', (req, res) => {
   res.redirect('/admin/announcements');
 });
 // Home Page
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
