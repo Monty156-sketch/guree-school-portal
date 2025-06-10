@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guree School Portal</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f8ff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      text-align: center;
+      margin: 0;
+    }
+
+    .welcome-box {
+      background: white;
+      padding: 40px;
+      margin-top: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      animation: fadeZoom 1s ease-in-out;
+    }
+
+    .announcements {
+      background-color: #fff;
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .announcements h4 {
+      color: #1e3a8a;
+      margin-bottom: 15px;
+    }
+
+    .announcements ul {
+      padding-left: 20px;
+    }
+
+    .announcements li {
+      margin-bottom: 10px;
+    }
+
+    @keyframes fadeZoom {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-box">
+    <h1 class="mb-3">🎓 Welcome to Guree Primary School Portal</h1>
+    <p class="lead">Building the future, one child at a time.</p>
+
+    <div class="mt-4">
+      <a href="/student-login" class="btn btn-primary me-2">Student Login</a>
+      <a href="/dashboard" class="btn btn-outline-secondary">Admin Login</a>
+    </div>
+  </div>
+
+  <div class="announcements">
+    <h4>📢 Latest Announcements</h4>
+    <ul>
+      <li>📅 3rd Term resumes on <strong>September 9th, 2025</strong></li>
+      <li>📝 Midterm test starts <strong>October 5th</strong></li>
+      <li>👨‍👩‍👧 PTA meeting: <strong>October 20th at 10am</strong></li>
+      <li>📘 All students must submit <strong>book reports</strong> by October 15th</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>📍 Guree Town</p>
+    <p>☎️ +233 249 140 814 | ✉️ info@gureeschool.com</p>
+    <p><em>"Discipline, Our Hallmark"</em></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

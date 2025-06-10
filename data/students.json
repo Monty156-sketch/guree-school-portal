@@ -1,0 +1,23 @@
+[
+  {
+    "fullname": "Siibu Beatrice",
+    "class": "6",
+    "gender": "Female",
+    "dob": "1993-02-02"
+  },
+  {
+    "id": "f0cb9564-aaca-402a-ad84-a39bbea0050a",
+    "fullname": "Siibu Berthy",
+    "class": "6",
+    "gender": "Female",
+    "dob": "2011-07-07"
+  },
+  {
+    "id": "b870e8f2-f3c8-486e-a8a1-4909f374f776",
+    "fullname": "Imori Sofiatu",
+    "class": "6",
+    "gender": "Female",
+    "dob": "2012-05-21",
+    "password": "Sofiatu2"
+  }
+]
