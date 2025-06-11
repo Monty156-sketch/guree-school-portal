@@ -611,12 +611,9 @@ app.post('/login', (req, res) => {
 
 // Dashboard (protected)
 app.get('/dashboard', (req, res) => {
-    if (!req.session.user) {
-      return res.redirect('/login');
-    }
-  
-    res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
-  });
+  if (!req.session.user) return res.redirect('/login');
+  res.sendFile(path.join(__dirname, 'public', 'dashboard.html'));
+});
  
 
   // Students Page
