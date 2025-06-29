@@ -48,6 +48,8 @@ app.get('/uploads', (req, res) => {
       ? fs.readFileSync(path.join(__dirname, 'data', 'uploads.json'))
       : '[]'
   );
+  
+// Trigger redeploy
 
   const fileList = uploadsMeta.map(file => `
     <li>
